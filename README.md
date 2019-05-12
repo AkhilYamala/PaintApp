@@ -1,2 +1,2 @@
 # PaintApp
-A basic Paint Application using HTML CANVAS
+A basic <strong>paint application</strong> using HTML CANVAS
