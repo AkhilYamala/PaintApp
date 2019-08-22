@@ -29,6 +29,10 @@ document.addEventListener("mousemove",function(event){
 	}
 });
 
+function erase() {
+	c.strokeStyle = '#111118';
+}
+
 var colors = document.querySelectorAll('nav a');
 colors.forEach((element) => {
 	element.addEventListener("click", function(event){

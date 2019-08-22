@@ -11,29 +11,45 @@
 		}
 		body {
 			background-color : #111118;
-			min-height: 100vh;  
+			min-height: 200vh;  
 		}
 		nav {
 			position: fixed;
 			z-index : 1;
-			bottom: 30px;
+			top: 30px;
 			left : 30px;
 		}
-		nav a {
-			display: inline-block;
+		.colors {
+			display: block;
 			width : 60px;
 			height : 60px;
-			border-radius: 25px;
-			margin : 0 10px 0 0;
+			border-radius: 20px;
+			margin : 0 10px 10px 0;
 		}
+		.eraser {
+			border : none;
+			width : 60px;
+			height: 60px;
+			border-radius: 20px;
+			background-color : #eee;
+			margin : 0 10px 0 0;
+			cursor: pointer;
+			font-weight: 600;
+			font-size: 16px;
+		}
+		/* used to remove rectangular border for button */
+		.eraser:focus {
+			outline: none;
+		} 
 	</style>
 <body>
 	<canvas></canvas>
 	<nav>
-		<a href="#" style="background-color:#659d8d"></a>
-		<a href="#" style="background-color:#daad86"></a>
-		<a href="#" style="background-color:#bc46c9"></a>
-		<a href="#" style="background-color:#d79922"></a>
+		<a class='colors' href="#" style="background-color:#659d8d"></a>
+		<a class='colors' href="#" style="background-color:#daad86"></a>
+		<a class='colors' href="#" style="background-color:#bc46c9"></a>
+		<a class='colors' href="#" style="background-color:#d79922"></a>
+		<button class="eraser" onclick="erase()">Eraser</button>
 	</nav>
 </body>
 <script type="text/javascript" src="index.js"></script>
