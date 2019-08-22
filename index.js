@@ -33,6 +33,14 @@ function erase() {
 	c.strokeStyle = '#111118';
 }
 
+function increaseWidth() {
+	c.lineWidth++;
+}
+
+function decreaseWidth() {
+	c.lineWidth--;
+}
+
 var colors = document.querySelectorAll('nav a');
 colors.forEach((element) => {
 	element.addEventListener("click", function(event){

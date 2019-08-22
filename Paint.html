@@ -26,19 +26,24 @@
 			border-radius: 20px;
 			margin : 0 10px 10px 0;
 		}
-		.eraser {
+		button {
+			display: block;
 			border : none;
 			width : 60px;
 			height: 60px;
 			border-radius: 20px;
-			background-color : #eee;
+			background-color : #46eb7d;
 			margin : 0 10px 0 0;
 			cursor: pointer;
 			font-weight: 600;
 			font-size: 16px;
 		}
+		.eraser {
+			margin: 30px 0;
+			background-color : #C0C0C0;
+		}
 		/* used to remove rectangular border for button */
-		.eraser:focus {
+		button:focus {
 			outline: none;
 		} 
 	</style>
@@ -50,6 +55,10 @@
 		<a class='colors' href="#" style="background-color:#bc46c9"></a>
 		<a class='colors' href="#" style="background-color:#d79922"></a>
 		<button class="eraser" onclick="erase()">Eraser</button>
+		<div class='size'>
+			<button onclick="increaseWidth()">+</button>
+			<button onclick="decreaseWidth()">-</button>
+		</div>
 	</nav>
 </body>
 <script type="text/javascript" src="index.js"></script>
